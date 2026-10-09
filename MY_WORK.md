@@ -129,69 +129,83 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [October 1, 2026 at 1:34 PM]
+**What I did**: create my GitHub account with my own university email
 
 **Details**:
+- download GitHub and forked the starter repository and renamed it 
+- download the extensions on VS Code
+- setting my id
 
 **Challenges**:
-
+everything was clear thankfully
 **Solution**:
 
 **Time spent**:
-
+less than an hour
 ---
 
-### Entry 2 - [Date and Time]
+### Entry 2 - [October 7, 2026 at 2:24 PM]
 **What I did**:
-
+Adding FEATURE 1 and chacking it
 **Details**:
+- Added the `priority` integer variable (1-10, 10 being highest) to the `Process` class and its constructor.
+- Integrated `getPriority()` method to access the process priority value.
+- Updated the random assignment logic in the `main` loop using the seeded generator.
+- Modified the `addProcessToQueue()` output message to print the process priority as it enters the ready queue, ensuring the underlying queue behavior remains strictly FIFO.
 
 **Challenges**:
-
+The time management
 **Solution**:
-
+I tried my best on managing it
 **Time spent**:
-
+about an hour 
 ---
 
-### Entry 3 - [Date and Time]
+### Entry 3 - [October 8, 2026 at 9:12 AM]
 **What I did**:
-
+I simply filled my student information in 'MY_WORK' *this file*
 **Details**:
-
+nothing to mention
 **Challenges**:
-
+nothing
 **Solution**:
 
 **Time spent**:
-
+less than 10min
 ---
 
 ### Entry 4 - [Date and Time]
 **What I did**:
-
+Adding FEATURE 2 and chacking it
 **Details**:
-
+- Declared a `private static int contextSwitchCount` variable initialized to 0 in the `SchedulerSimulation` class.
+- Added the increment operation (`contextSwitchCount++`) inside the scheduling loop every time a process is successfully dequeued to begin execution.
+- Programmed the final summary block to output the total number of context switches utilizing the `Colors.BRIGHT_YELLOW` terminal styling for a clean layout.
 **Challenges**:
-
+The Display for the total context
 **Solution**:
-
+I educated myself using open surces like AI
+but not fully depending on it
 **Time spent**:
-
+about an hour and half
 ---
 
-### Entry 5 - [Date and Time]
+### Entry 5 - [October 9, 2026 at 7:30 PM]
 **What I did**:
-
+Adding FEATURE 3 and chacking it
 **Details**:
-
+- Added `creationTime`, `totalWaitingTime`, and `lastReadyTime` fields to the `Process` class to monitor process timestamps.
+- Implemented `updateWaitingTime()` and `setLastReadyTime()` inside the main scheduling loop to accurately calculate total waiting duration dynamically.
+- Created `getTurnaroundTime()` to evaluate the absolute lifecycle time of each process (Waiting Time + Burst Time).
+- Designed the `displayWaitingTimeSummary()` method to output a clean, color-coded ANSI table summarizing individual process metrics alongside their collective averages
 **Challenges**:
-
+Understanding the methods and how to link them
 **Solution**:
-
+I educated myself using open surces like AI
+but not fully depending on it
 **Time spent**:
-
+more than 3 hours
 ---
 
 ### Entry 6 - [Optional - Date and Time]
@@ -211,14 +225,14 @@
 
 > 💡 **TIP:** Fill this in **last**, after all entries are written.
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [7 hours]
 
 **Most challenging part**:
-
+FEATER 3
 **Most interesting learning**:
-
+FEATER 3
 **What I would do differently next time**:
-
+starting earlier 
 ---
 
 # Part B: Reflection (0.5 mark)
