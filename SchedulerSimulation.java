@@ -35,7 +35,7 @@ class Process implements Runnable {
     // FEATURE 1: Add priority parameter
     private int priority; // Priority of the process (1-10, 10 being highest)
 
-    // FEATURE 3: parameters to track waiting time
+    // FEATURE 3: variable to track waiting time
     private long creationTime; // The time when the prosses was created in milliseconds
     private long totalWaitingTime; //The total time spent waiting in queue in milliseconds
     private long lastReadyTime; //The last time the process has entered the ready queue
@@ -265,7 +265,7 @@ public class SchedulerSimulation {
             int priority = 1 + random.nextInt(10); // it will give an random number between 1 and 10
  
             // Create a new process object with a unique name, burst time, and the defined time quantum
-            // FEATURE 1 : priority parameter has been added
+            // FEATURE 1 : priority variable has been added
             Process process = new Process("P" + i, burstTime, timeQuantum,priority);
             
             // Add the process to the ready queue and the map
