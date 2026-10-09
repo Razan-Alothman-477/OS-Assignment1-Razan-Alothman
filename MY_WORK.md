@@ -251,7 +251,7 @@ starting earlier
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I learned a lot about how Java handles multiple tasks at the same time. I discovered that we can create a thread easily by using the Runnable interface. I also learned that Thread.start() is what actually makes the thread begin running. A key lesson was using Thread.join(), which forces the program to wait until a specific thread finishes its job. What surprised me the most was using Thread.sleep() to simulate real CPU work. It was amazing to see how multiple tasks can share the CPU smoothly.]
 
 ## Question 2: What was the most challenging part of this assignment?
 
@@ -259,7 +259,7 @@ starting earlier
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[The hardest part for me was managing my time well. It was difficult to balance my university classes and my first graduation project at the same time. On the technical side, making Feature 3 was a big challenge. It took me a lot of effort to calculate the waiting times correctly. Also, printing the final summary table with the right layout was not easy. In the end, finding enough time to code and fix these features was the toughest part.]
 
 ## Question 3: How did you overcome the challenges you faced?
 
@@ -267,7 +267,7 @@ starting earlier
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[To solve my time management issue, I decided to work on each feature on a different day. This separate schedule helped me focus without feeling too stressed by my graduation project. I also used open-source materials and some AI tools to help me understand the difficult code parts. However, I did not rely on AI completely, as I made sure to learn and write the logic myself.]
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
@@ -275,7 +275,7 @@ starting earlier
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[ We can see these concepts in many everyday applications. For example, a web browser uses one thread to download images and another thread to let you scroll the page. A music app needs one thread to play the audio and another thread to update the song timer. Also, mobile video games use multiple threads to handle graphics, physics, and online players without lagging. This assignment showed me exactly how operating systems keep our favorite apps running fast and smooth during ]
 
 ### Optional: What would you like to learn more about?
 
@@ -287,7 +287,7 @@ starting earlier
 
 ### Optional: Feedback on the assignment
 
-[Any comments? Was it helpful? Too easy or hard? Suggestions?]
+[Thank you to everyone who worked on creating this assignment. Although it was not the easiest nor the hardest, I learned a lot from it ]
 
 ---
 
