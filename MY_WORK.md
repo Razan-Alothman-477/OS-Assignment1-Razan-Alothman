@@ -307,7 +307,7 @@ starting earlier
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[A process is like a big, separate program with its own memory space, but a thread is just a small worker inside it. We chose threads for this assignment because they share memory and are much faster to create, which saves a lot of computer power. In our simulation, the Process class is only an imitation task, and it is actually run by a real Java thread inside the addProcessToQueue method.]
 
 ## Question 2: Ready Queue Behavior
 
@@ -319,15 +319,20 @@ starting earlier
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[In Round-Robin scheduling, when a process cannot finish within its time quantum, it stops executing and yields the CPU so other tasks can run. The scheduler then puts this process back at the end of the ready queue to wait for another round. In my own run, process P3 had a long burst time of 9511ms and could not finish in one go, so it was re-queued exactly two times before it completed.]
 
 Example from my output:
 ```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
+[➕ P3 (Priority: 5) added to ready queue │ Burst time: 9511ms
+▶ P3 executing quantum [4000ms]
+⏸ P3 completed quantum 4000ms │ Overall progress: [████░░░░] 42%
+Remaining time: 5511ms
+↻ P3 yields CPU for context switch
+➕ P3 (Priority: 5) added to ready queue │ Burst time: 9511ms]
 ```
 
 **Explanation of example:**
-[Explain what is happening in the output snippet you pasted.]
+[This snippet shows process P3 entering the ready queue with a large burst time of 9511ms. Since the time quantum is set to 4000ms, P3 runs for that maximum time, updates its overall progress to 42%, and then yields the CPU because it still has 5511ms left. The scheduler then automatically moves P3 to the back of the queue so that other waiting tasks can access the processor fairly.]
 
 ## Question 3: Thread Lifecycle
 
@@ -337,15 +342,15 @@ Example from my output:
 
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
-1. **New**: [When is P1 in the New state?]
+1. **New**: [P1 is New when we create the object using Thread thread = new Thread(process)]
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable**: [P1 becomes Runnable when the scheduler calls currentThread.start() inside the main loop, making it ready to execute.]
 
-3. **Running**: [When is P1 Running?]
+3. **Running**: [P1 is Running when the CPU picks it up and it starts executing the code inside its run() method.]
 
-4. **Waiting**: [When and why would a thread be Waiting?]
+4. **Waiting**: [P1 enters the Waiting state when it executes Thread.sleep() inside the run method to simulate the progress bar time.]
 
-5. **Terminated**: [When is P1 Terminated?]
+5. **Terminated**: [P1 becomes Terminated when its remaining time hits zero and it completely finishes executing the run() method.]
 
 ## Question 4: Real-World Applications
 
@@ -355,31 +360,31 @@ Example from my output:
 
 **Your Answer:** *(3-5 sentences per example)*
 
-### Example 1 (operating-system level): [Name of scenario]
+### Example 1 (operating-system level): [Operating System Quantum ]
 
 **Description**:
-[Describe the real-world scenario.]
+[A network operating system inside a home Wi-Fi router shares internet bandwidth among connected devices like phones and smart TVs. Each device data packet acts as a process, the router sets a short time quantum for transmission, and moving to the next device packet is the context switch.]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[It ensures total fairness and high responsiveness for all family members using the internet. It prevents one person downloading a huge game from blocking the Wi-Fi connection for everyone else.]
 
-### Example 2: [Name of application/scenario]
+### Example 2: [Online Multiplayer Game Server]
 
 **Description**:
-[Describe the real-world scenario or application.]
+[A game server updates the actions of multiple online players in a match at the same time. Each player action works as a process, the server sets a quick time quantum to update each position, and jumping to the next player is the context switch.]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[It provides amazing predictability and keeps the gameplay fair and balanced. It makes sure no player experiences lag or delays just because another player has a slower internet connection.]
 
 ## Summary
 
 **Key concepts I understood through these questions:**
-1.
-2.
+1.How the Round-Robin queue keeps execution fair by making long tasks yield their CPU turn.
+2.The clear difference between a process holding data and a thread doing the actual execution.
 3.
 
 **Concepts I need to study more:**
-1.
+1.Advanced thread control methods to safely stop, resume, and organize execution blocks in larger programs.
 2.
 
 ---
